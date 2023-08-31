@@ -10,15 +10,20 @@
 
 <body>
 
-
-    <video id="meron3dModel" muted="" playsinline="" preload="auto" autoplay="">
-        <source type="video/mp4" src="./test.mp4">
-    </video>
-    <button type="button" id="sound-btn">Start</button>
-    <button type="button" id="sound-btn-off">Stop</button>
+    <div class="element-container">
+        <video id="meron3dModel" controls muted="false" playsinline="" preload="auto" autoplay="">
+            <source type="video/mp4" src="./test.mp4">
+        </video>
+        <div class="decibel-bar">
+            <span class="bar-level">50db</span>
+        </div>
+    </div>
+    <!-- <button type="button" id="sound-btn">Start</button>
+    <button type="button" id="sound-btn-off">Stop</button> -->
 
     <script src="./consts.js"></script>
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
+    <script src="./sync.js"></script>
 </body>
 
 </html>

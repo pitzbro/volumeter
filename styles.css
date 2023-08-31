@@ -6,5 +6,36 @@ body {
 }
 
 video {
+    grid-area: 1 / 1/ -1 / -1;
     height: 80vh;
+}
+
+:root {
+    --bar-height: 50%;
+    --bar-color: #fff;
+}
+
+.element-container {
+    display: grid;
+    grid-template-columns: 18px 1fr 18px;
+    grid-template-rows: 18px 1fr 18px;
+}
+
+.decibel-bar {
+    grid-area: 2 / 2 / 3 / 3;
+    border-inline-end: 4px solid var(--bar-color);
+    align-self: flex-end;
+    justify-self: flex-end;
+    height: var(--bar-height);
+    display: flex;
+    align-items: flex-start;
+
+    transition: height 0.16s;
+}
+
+.bar-level {
+    font-family: sans-serif;
+    background-color: var(--bar-color);
+    font-weight: 700;
+    padding: 5px 7px 5px 10px;
 }
